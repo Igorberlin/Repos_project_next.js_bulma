@@ -1,6 +1,13 @@
 import Link from "next/link";
+import styles from "./navbar.module.scss";
 
 const Navbar = () => {
+    const toggleBurger = () => {
+        const burgerIcon = document.getElementById("burger");
+        const dropMenu = document.getElementById("navbarBasicExample");
+        burgerIcon.classList.toggle("is-active");
+        dropMenu.classList.toggle("is-active");
+    };
     return (
         <nav
             className="navbar is-primary"
@@ -10,10 +17,12 @@ const Navbar = () => {
             <div className="navbar-brand">
                 <a
                     role="button"
+                    id="burger"
                     className="navbar-burger"
                     aria-label="menu"
                     aria-expanded="false"
                     data-target="navbarBasicExample"
+                    onClick={() => toggleBurger()}
                 >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
