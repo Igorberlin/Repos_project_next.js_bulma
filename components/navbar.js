@@ -31,8 +31,10 @@ const Navbar = () => {
             </div>
             <div id="navbarBasicExample" className="navbar-menu ">
                 <div className="navbar-start">
-                    <Link href="/">
-                        <a className="navbar-item">Github Repos 📦</a>
+                    <Link href="https://github.com/Igorberlin?tab=repositories">
+                        <a className="navbar-item" target="_blank">
+                            Github Repos 📦
+                        </a>
                     </Link>
                     <Link href="/">
                         <a className="navbar-item">Home</a>
